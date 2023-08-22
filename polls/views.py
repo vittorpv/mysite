@@ -11,4 +11,7 @@ class QuestionDetail(DetailView):
     template_name = 'question.html'
     model = Question
     
+class ResultsView(DetailView):
+    template_name = 'results.html'
+    model = Question 
     
