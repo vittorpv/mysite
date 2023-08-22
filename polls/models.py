@@ -7,4 +7,4 @@ class Question(models.Model):
 class Choice(models.Model):
     choice_text = models.CharField(max_length=150)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    votes = models.PositiveSmallIntegerField()
+    votes = models.PositiveSmallIntegerField(default=0)
